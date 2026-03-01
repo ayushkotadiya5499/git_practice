@@ -10,8 +10,10 @@ question=st.text_input('Enter your question here')
 
 if st.button('Get Answer'):
     response=requests.get(url, params={'question': question})
-    st.write(response.text)
+    st.success(response.text)
+    st.balloons()
 
 if st.button('Get Answer with Translate'):
     response=requests.get(url1, params={'question': question})
-    st.write(response.text)
+    st.success(response.text)
+    st.balloons()
