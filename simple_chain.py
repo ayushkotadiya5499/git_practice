@@ -14,7 +14,7 @@ template=PromptTemplate(template="""
                         validate_template=True)
 
 
-model=ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-4.1-mini", temperature=0.9)
+model=ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-5.2-2025-12-11", temperature=0.9)
 
 
 x=template.invoke('what is capital of india')
