@@ -1,6 +1,14 @@
 import seaborn as sns
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
 data=sns.load_dataset('iris')
 print(data.head())
+
+X=data.drop('species',axis=1)
+y=data['species']   
+model=DecisionTreeClassifier(max_depth=2, random_state=0)
+model.fit(X,y)
+y_pred=model.predict(X)
+print(classification_report(y,y_pred))
+print(confusion_matrix(y,y_pred))   
