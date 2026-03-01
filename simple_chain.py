@@ -17,7 +17,7 @@ template=PromptTemplate(template="""
 
 
 model=ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-5.2-2025-12-11", temperature=0.9)
-
+model2=ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-5.2-2025-12-11", temperature=0.9)
 
 app = FastAPI()
 
