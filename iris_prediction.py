@@ -7,7 +7,7 @@ print(data.head())
 
 X=data.drop('species',axis=1)
 y=data['species']   
-model=DecisionTreeClassifier(max_depth=2, random_state=0)
+model=DecisionTreeClassifier(max_depth=25, random_state=0,min_samples_leaf=5,min_impurity_decrease=0.2)
 model.fit(X,y)
 y_pred=model.predict(X)
 print(classification_report(y,y_pred))
