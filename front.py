@@ -8,7 +8,7 @@ url1='http://127.0.0.1:8000/get_answer_with_translate'
 
 st.header('langchain with streamlit')
 st.success('this is only mine this DMS')
-question=st.text_input('Enter your question here ok under 50 words')
+question=st.text_input('Enter your question here ok under 5000000 words')
 
 if st.button('Get Answer'):
     response=requests.get(url, params={'question': question})
