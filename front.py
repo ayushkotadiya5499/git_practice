@@ -7,7 +7,7 @@ url='http://127.0.0.1:8000/get_answer'
 url1='http://127.0.0.1:8000/get_answer_with_translate'
 
 st.header('langchain with streamlit')
-st.success('this is only mine')
+st.success('this is only mine this ')
 question=st.text_input('Enter your question here ok under 50 words')
 
 if st.button('Get Answer'):
