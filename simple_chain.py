@@ -11,6 +11,8 @@ load_dotenv()
 template=PromptTemplate(template="""
 
         give me answer of this question  : {question} in less than 50 words
+                        
+        make sure that it give me proper and latest answer 
                         """,
                         input_variables=['question'],
                         validate_template=True)
