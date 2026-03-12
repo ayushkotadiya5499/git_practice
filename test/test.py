@@ -8,4 +8,5 @@ model = LinearRegression()
 model.fit(X, y)
 y_pred = model.predict(X)
 mse = mean_squared_error(y, y_pred)
-print(f"Mean Squared Error: {mse}")
+print(f" this is Mean Squared Errors: {mse}")
+
